@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facetrack</title>
+</head>
+
+<body onload="greeter();">
+    <div id="mainscreen">
+        <center>
+            <div id="container" style="padding-top: 0px;">
+
+                <canvas id="canvas">
+                </canvas>
+                <div id="CalibProgress">
+                    <div id="CalibBar" style="width:0%"></div>
+                </div>
+                <canvas id="innercanvas" onclick="initializer();"></canvas>
+
+                <video autoplay="true" id="videoElement" style="opacity:0; height: 0; width: 0;">
+                </video>
+            </div>
+        </center>
+        <center>
+            <div id="keyscontainer">
+                <div id="keysarea">
+                    <div id="TimeProgress">
+                        <div id="TimeBar" style="width:0%"></div>
+                    </div>
+                    <p id="optionsparagraph"></p>
+                </div>
+            </div>
+        </center>
+        <center>
+            <div id="writtencontainer">
+                <p id="writtenarea"></p>
+            </div>
+        </center>
+    </div>
+    <script src="code.js">
+    </script>
+</body>
+
+</html>

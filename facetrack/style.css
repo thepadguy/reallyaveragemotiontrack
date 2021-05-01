@@ -1,0 +1,149 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+#mainscreen {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#container {
+    width: 80vw;
+    height: 45vw;
+    max-height: 60vh;
+    max-width: 106.67vh;
+    opacity: 1.0;
+    min-height: 480px;
+    min-width: 640px;
+    background-color: transparent;
+}
+
+#videoElement {
+    width: 100%;
+    height: 100%;
+    background-color: #888;
+}
+
+#keyscontainer {
+    margin-top: 5px;
+    width: 80vw;
+    height: max-content;
+    max-height: 60vh;
+    max-width: 106.67vh;
+    background-color:transparent;
+    margin-bottom: 5px;
+    min-height: max-content;
+    min-width: 640px;
+}
+
+#keysarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    top: 0px;
+    left: 0px;
+    height: max-content;
+    width: 100%;
+    background-color:transparent;
+    overflow-y: auto;
+}
+
+#writtencontainer {
+    margin-top: 5px;
+    width: 80vw;
+    height: 30vw;
+    max-height: 60vh;
+    max-width: 106.67vh;
+    background-color: transparent;
+    margin-bottom: 5px;
+    min-height: max-content;
+    min-width: 640px;
+    overflow-y: auto;
+}
+
+#canvas {
+    width: 640px;
+    height: 480px;
+    opacity: 0;
+}
+
+#innercanvas {
+    width: 320px;
+    height: 240px;
+    background-color: black;
+    position: relative;
+    filter: grayscale(1);
+}
+
+#CalibProgress {
+    position: absolute;
+    height: 10px;
+    width: 640px;
+    background-color: transparent;
+    opacity: 1.0;
+}
+
+#CalibBar {
+    height: 10px;
+    background-color: white;
+    left: 0px;
+    opacity: 1.0;
+    position: absolute;
+}
+
+#TimeProgress {
+    position: absolute;
+    height: 10px;
+    width: inherit;
+    background-color: transparent;
+    opacity: 1.0;
+}
+
+#TimeBar {
+    height: 10px;
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    opacity: 1.0;
+    position: absolute;
+}
+
+#optionsparagraph {
+    position: relative;
+    font-size: 400%;
+    transform: translate(0%, 50%);
+    margin: 0px 0px;
+    max-width: 100%;
+    overflow-y: auto;
+    color: white;
+}
+
+#writtenarea {
+    position: relative;
+    font-size: 280%;
+    top: 0%;
+    left: 0%;
+    margin: 0px 0px;
+    overflow-y: auto;
+    max-width: 100%;
+    color: white;
+}
